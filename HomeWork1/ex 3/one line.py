@@ -1,2 +1,2 @@
-x = 'aba'
-print(x==x[::-1])
+x = 'abc'
+print(x==x[-1::-1])
