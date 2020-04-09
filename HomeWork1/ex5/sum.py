@@ -1,7 +1,7 @@
 number= int(input())
-sum = 0
+sum_1 = 0
 while number!=0:
     if number % 2 == 1:
-        sum+=1
+        sum_1+=1
     number//=2
-print(sum)
+print(sum_1)

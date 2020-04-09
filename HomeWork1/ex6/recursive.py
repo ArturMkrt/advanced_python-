@@ -1,5 +1,5 @@
 def num(x,y):
-    if max(x,y) // min(x,y) == 0 or x==y:
+    if x==y:
         return y
     if x>y:
         return num(x-y,y)

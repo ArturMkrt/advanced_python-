@@ -1,5 +1,5 @@
 num = input("Enter a number ")
-sum = 0
+sum_1 = 0
 for i in num:
-    sum+=int(i)
-print(sum)
+    sum_1+=int(i)
+print(sum_1)
