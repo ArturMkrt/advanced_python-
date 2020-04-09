@@ -1,2 +1,2 @@
 num = (input("Enter a number "))
-print(sum(map(int,num)))
+print(sum(int(digit) for digit in str(num)))
