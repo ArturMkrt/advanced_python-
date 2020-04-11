@@ -15,3 +15,10 @@ def second_max(l):
 print(second_max([1, 5, 6, 4, 2]))
 print(second_max([1, 5, 5]))
 print(second_max([5, 5, 5]))
+#//////////////////////////////////////////////////
+def second_max(l):
+    l = sorted(set(l))
+    return 0.5 if len(l) == 1 else l[-2]
+print(second_max([1, 5, 6, 4, 2]))
+print(second_max([1, 5, 5]))
+print(second_max([5, 5, 5]))

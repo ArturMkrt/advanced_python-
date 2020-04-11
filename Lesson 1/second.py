@@ -38,3 +38,25 @@ def get_dup_count(strs,same_symbol = False):
 
 
 print(get_dup_count(['abc','abd','abe'],False))
+#////////////////////////////////////////////////////////////////////
+def get_dup_count(strs,same_symbol = False):
+  lists = [list(s) for s in strs[1:]]
+  if same_symbol:
+    chars = list(strs[0])
+  else:
+    chars = list(set(strs[0]))
+  for i in range(len(lists)):
+    j = 0
+    while j < len(chars):
+      if chars[j] in lists[i]:
+        if same_symbol:
+          lists[i].remove(chars[j])
+        j += 1
+      else:
+        del chars[j]
+  return len(chars)
+
+print(get_dup_count(["abc", "abd", "abe"]))
+print(get_dup_count(["a", "b", "c"]))
+print(get_dup_count(["aaa", "aab", "aac"]))
+print(get_dup_count(["aaa", "aab", "aac"], True))
