@@ -55,8 +55,3 @@ def get_dup_count(strs,same_symbol = False):
       else:
         del chars[j]
   return len(chars)
-
-print(get_dup_count(["abc", "abd", "abe"]))
-print(get_dup_count(["a", "b", "c"]))
-print(get_dup_count(["aaa", "aab", "aac"]))
-print(get_dup_count(["aaa", "aab", "aac"], True))
