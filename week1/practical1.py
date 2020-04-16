@@ -6,3 +6,12 @@ def last_digit(n):
 
 def quick_or (lst):
     return max(sorted(lst,reverse=True)) > 0
+
+def is_polyndrome(st):
+    odd=0
+    myset=set(st)
+    for i in myset: 
+        n=st.count(i)
+        if n%2!=0:
+            odd+=1
+    return odd<=1
