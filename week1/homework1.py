@@ -1,5 +1,5 @@
-def all_positive(*integer):
-    return min(integer)<0
+def all_positive(first,*integer):
+    return min([first,*integer])<0
 
 
 def xor3(a,b,c):

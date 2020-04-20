@@ -1,12 +1,5 @@
-def bit_concat(lst):
-    lst = ['{:08b}'.format(x) for x in lst]
-    m = 6
-    y = 8
-    s = ''
-    for n in range(len(lst)):
-        print(n)
-        s = lst[n][m:y] + s
-        m-=2
-        y-=2
-    return int(s,2)
-print(bit_concat([3,12]))
+"""def int_to_ipv4(num):
+    chunks = ['{:032b}'.format(num)[i:i+8] for i in range(0,32,8)]
+    return  ''.join()
+print(int_to_ipv4(167772210))"""
+map(lambda i:int(i,2),['100','100'])

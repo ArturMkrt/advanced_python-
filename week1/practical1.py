@@ -15,3 +15,6 @@ def is_polyndrome(st):
         if n%2!=0:
             odd+=1
     return odd<=1
+
+def recursive_or(lst):
+    return lst[0] or (len(lst)> 1 and recursive_or(lst[1:]))
