@@ -12,7 +12,7 @@ def bisect_position(lst, num):
     return m
 
 def all_sums(num):
-    return [(num-i,i) for i in range(1,num//2+1)]
+    return [(i,num-i) for i in range(1,num//2+1)]
 
 from collections import defaultdict 
 def duplicate_characters(str):
@@ -70,8 +70,8 @@ def sort_list(arr,order='ascending'):
         mid = len(arr) // 2
         L = arr[:mid]
         R = arr[mid:]
-        mergeSort(L,order)
-        mergeSort(R,order)
+        sort_list(L,order)
+        sort_list(R,order)
         i = j = k = 0
         while i < len(L) and j < len(R):
             if op(L[i],R[j]):
