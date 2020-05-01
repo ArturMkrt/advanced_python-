@@ -2,7 +2,7 @@ def parse_ini(file_path):
     d = {}
     section = None
     with open(file_path) as f:
-        for i, line in enumerate(f.readlines()):
+        for i, line in enumerate(f):
             line = line.strip()
             if len(line):
                 if line[0] == "[" and line[-1] == "]":
