@@ -6,11 +6,11 @@ def parse_ini(file_path):
             line = line.strip()
             if len(line):
                 if line[0] == "[" and line[-1] == "]":
+                    section = line[1:-1]
                     if "[" in section or "]" in section:
                         raise Exception("Not allowed char in section header at line {}".format(i + 1))
                     if section in d:
                         raise Exception("Duplicated section header at line {}".format(i + 1))
-                    section = line[1:-1]
                     d[section] = {}
                 else:
                     if section is None:
