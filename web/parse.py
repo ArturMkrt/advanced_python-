@@ -22,7 +22,7 @@ def parse_ini(file_path):
                     if key in d[section]:
                         raise Exception("Duplicated key for section at line {}".format(i + 1))
                     value = parts[1].strip()
-                    if len(value)!= 0 and value[0] != "0" and value.isdecimal():
+                    if len(value) and value[0] != "0" and value.isdecimal():
                         value = int(value)
                     d[section][key] = value
     return d
