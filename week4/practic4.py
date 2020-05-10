@@ -8,3 +8,8 @@ group = {'Name':['Jora','Ruzanna','Hayk','Liana','Salbina','Sona','Tatev','Vlad'
 df = pd.DataFrame(group,columns=['Name','Surname','sex','Age','Status'])
 df=  df.set_index('Name')
 print(df)
+
+
+import pandas as pd
+df = pd.read_csv("netflix_titles.csv") 
+df[(df["release_year"] > 2015) & ((df["cast"].str.contains("Kevin Spacey")) | (df["cast"].str.contains("Leonardo DiCaprio")))]
