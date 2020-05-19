@@ -30,8 +30,9 @@ class Person:
         self.last_name = last_name
         self.age = age
         self.gender = gender
+        self.__password = password
         if isinstance(student,bool):
-            self.__password=password
+            self.student=student
         else:    
             raise Exception("Student attribute takes values True or False")
     def Greeting(self,second_person):
