@@ -42,15 +42,17 @@ class Person:
     def Favourite_num(self, num1):
         return 'My favorite number is {}'.format(num1)
     
-    
 class Polygon:
     def __init__(self, n_of_sides):
+        assert isinstance(n_of_sides,int),"Please input a positive integer"
+        assert n_of_sides>=3, 'import existing polygon'
         self.n = n_of_sides
         self.sides = list()
 
     def input_sides(self, sides):
+        assert isinstance(sides,list),"sides must be given as list"
         self.sides = sides
-        print(self.sides)
+        assert len(sides)==self.n,'length of list not equal length of sides '
 
     def disp_sides(self):
         for i in range(self.n):
@@ -62,15 +64,12 @@ class Polygon:
 class Quadrilatera(Polygon):
     def __init__(self):
         super().__init__(4)
-class  Rectangle(Quadrilatera):
-    def __init__(self):
-        super().__init__()   
+class  Rectangle(Quadrilatera): 
     def input_sides(self,s):
         super().input_sides(s*2)
     def get_area(self):
         return self.sides[0]*self.sides[1]
 class  Square(Rectangle):
-    def __init__(self):
-        super().__init__()
     def input_sides(self,s):
         super().input_sides(s*2)
+    
