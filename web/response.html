@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<!-- HEADER -->
+<!--
+01010000 01100101 01101111 01110000 01101100 01100101 00100000 01100001 01110011 01110011 01110101 01101101 01100101 00100000 01110100 01101000 01100001 01110100 00100000 01110100 01101001 01101101 01100101 00100000 01101001 01110011 00100000 01100001 00100000 01110011 01110100 01110010 01101001 01100011 01110100 00100000 01110000 01110010 01101111 01100111 01110010 01100101 01110011 01110011 01101001 01101111 01101110 00100000 01101111 01100110 00100000 01100011 01100001 01110101 01110011 01100101 00100000 01110100 01101111 00100000 01100101 01100110 01100110 01100101 01100011 01110100 00101100 00100000 01100010 01110101 01110100 00100000 01100001 01100011 01110100 01110101 01100001 01101100 01101100 01111001 00100000 01100110 01110010 01101111 01101101 00100000 01100001 00100000 01101110 01101111 01101110 00101101 01101100 01101001 01101110 01100101 01100001 01110010 00101100 00100000 01101110 01101111 01101110 00101101 01110011 01110101 01100010 01101010 01100101 01100011 01110100 01101001 01110110 01100101 00100000 01110110 01101001 01100101 01110111 01110000 01101111 01101001 01101110 01110100 00100000 00101101 00100000 01101001 01110100 00100111 01110011 00100000 01101101 01101111 01110010 01100101 00100000 01101100 01101001 01101011 01100101 00100000 01100001 00100000 01100010 01101001 01100111 00100000 01100010 01100001 01101100 01101100 00100000 01101111 01100110 00100000 01110111 01101001 01100010 01100010 01101100 01111001 00100000 01110111 01101111 01100010 01100010 01101100 01111001 00101110 00101110 00101110 00100000 01110100 01101001 01101101 01100101 00101101 01111001 00100000 01110111 01101001 01101101 01100101 01111001 00101110 00101110 00101110 00100000 01110011 01110100 01110101 01100110 01100110 00101110
+-->
+<html lang="en">
+<head>
+    <title>ACA | Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Intensive IT courses with subsequent employment and competitive salary.">
+    <meta name="keywords" content="it, courses, armenia, web, android, ios, programming, internet, technology, yerevan">
+    <meta name="author" content="Armenian Code Academy">
+    
+    <meta property="og:url" content="http://aca.am/en/index.html"/>
+    <meta property="og:image" content="http://i.imgur.com/o27kplS.png"/>
+    
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets//favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../assets/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#73afb6">
+    <meta name="msapplication-TileImage" content="../assets/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /favicons -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/main.css?v=1.7" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/flag-icon.min.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- GOOGLE MAPS API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtcNWChw_BD42abygC3DmTqktHBZhwr94"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('mapwrap');
+			var myCenter=new google.maps.LatLng(40.198938, 44.490423);
+			var marker=new google.maps.Marker({
+				position:myCenter,
+			});
+
+            var mapOptions = {
+                center: new google.maps.LatLng(40.198938, 44.490423),
+                zoom: 15,
+                scrollwheel: false,
+                navigationControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+			marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167853920-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167853920-1');
+    </script>
+</head>
+<body id="page-top" data-spy="scroll" data-target="body">
+
+
+
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#headerwrap">MENU</a></h1>
+			<i class="fa fa-arrow-right menu-close"></i>
+			<a href="#headerwrap" class="page-scroll">Home</a>
+            <!--<a href="#" data-toggle="modal" data-target="#loginbox">Log In</a>-->
+			<a href="#courses" class="page-scroll">Courses</a>
+            <a href="#partners" class="page-scroll">Partners</a>
+			<a href="#subscribe" class="page-scroll">Contact</a>
+			<a href="https://www.facebook.com/Armenian-Code-Academy-420491148159763/timeline/"><i class="fa fa-facebook"></i></a>
+			<a href="mailto:info@aca.am"><i class="fa fa-envelope"></i></a>
+        </div>
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="fa fa-bars"></i></div>
+	</nav>
+    <div id="loginbox" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="form-signin-heading modal-title">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <form class="form-signin form" method="post">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                <br>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <br>
+                                <button class="btn btn-lg btn-primary btn-block btn-dark" type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+                <div class="col-xs-2" id="langs">
+                    <a href="../hy/index.html"><span class="flag-icon flag-icon-am"></span></a>
+                    &nbsp;&nbsp;
+                    <a href="index.html" class="active"><span class="flag-icon flag-icon-gb"></span></a>
+                </div>
+				<div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <h1>{code}</h1>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <h2>Armenian Code Academy</h2>
+                            <h4>Intensive IT courses with subsequent employment and competitive salary.
+                            <hr></h4>
+                            <h4>P: +374 (12) 48-16-32</h4>
+                            <h4>E: info@aca.am</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" id="button">
+                            <a href="#courses" class="btn btn-lg btn-enroll page-scroll" role="button">Admission is Open</a>
+							<!--<p>Until September 24 2016</p>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" id="arrow">
+                            <a href="#description" class="page-scroll"><i class="fa fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="col-xs-12 title">
+                        <h1>Courses</h1>
+                    </div>
+                    <div class="row"><!--data-sr-->
+                        <div class="col-xs-12">
+                            <h2>We provide classes in the most cutting-edge IT professions.</h2>
+                        </div>
+                        <div class="col-xs-4">
+                            <i class="fa fa-code"></i>
+                            <h4>Web</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <i class="fa fa-tablet"></i>
+                            <h4>Android</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <i class="fa fa-apple"></i>
+                            <h4>iOS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="col-xs-12 title">
+                        <h1>Certificate</h1>
+                    </div>
+                    <div class="row"><!-- data-sr-->
+                        <div class="col-xs-12">
+                            <h2>Our certificates are well-recognized and highly valued among Armenian IT companies.</h2>
+                        </div>
+                        <div class="col-xs-12">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="col-xs-12 title">
+                        <h1>Job</h1>
+                    </div>
+                    <div class="row"><!-- data-sr-->
+                        <div class="col-xs-12">
+                            <h2>Our graduates receive job offers with highly competitive salaries from the best IT companies.</h2>
+                        </div>
+                        <div class="col-xs-12">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+	<div id="call"><!-- data-stellar-background-ratio="0.3"-->
+        <div class="container">
+            <div class="row">
+                <div class="background col-xs-12 col-md-8"></div>
+                <div class="text col-xs-12 col-md-4">
+                    <h1>High quality IT education!</h1>
+                    <p>Our unique educational system is based on a special platform and completed with highly qualified lecturers and mentors accompanying students throughout the entire training. To prepare for further employment each student will participate in real projects and the best will receive a 100% discount on the tuition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- SUBSCRIPTION FORM -->
+	<script>
+        function courseName(clicked_id)
+        {
+            courseNameVar = clicked_id;
+        }
+        $(function() {
+            $(".form-ui input").focus(function(){
+                $(this).parents().removeClass('has-error');
+                $(this).prev().remove();
+            });
+
+
+            $("#applicantSubmit").click(function(){
+                var name = $('#applicantName').val();
+                var email = $('#applicantEmail').val();
+                $('#applicantSubmit').prop( "disabled", true );
+                $('#applicantSubmit').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Submitting...');
+                $.ajax({
+                    type: "POST",
+                    url: "../hy/enroll.php",
+                    data: $('form.form-ui').serialize() + "&courseName=" + courseNameVar,
+                    success: function(msg){
+                        if (msg == 1) {
+                            $("#enrollbox").modal('hide');
+                            $("[id=" + courseNameVar + "]").parent().append("<p class=\"text-success\" style=\"color:#ffffff;\" >Thank you for submission! We'll keep you updated on the latest news from ACA.</p>");
+                            $('#applicantSubmit').html('Subscribe');
+                            $('#applicantSubmit').prop( "disabled", false );
+                        } else {
+                            var errors = jQuery.parseJSON(msg);
+                            if ($.inArray(1, errors) >= 0) {
+                                if ($(".form-ui .form-group:first-child").find("label").length == 0) {
+                                    $(".form-ui .form-group:first-child").prepend("<label class=\"control-label\" for=\"uiName\">Please fill out this field</label>");
+                                }
+                                if (!($(".form-ui .form-group:first-child").hasClass('has-error'))) {
+                                    $(".form-ui .form-group:first-child").addClass('has-error');
+                                }
+                            }
+                            if ($.inArray(2, errors) >= 0) {
+                                if ($(".form-ui .form-group:nth-child(2)").find("label").length == 0) {
+                                    $(".form-ui .form-group:nth-child(2)").prepend("<label class=\"control-label\" for=\"uiEmail\">Please enter a valid email address.</label>");
+                                }
+                                if (!($(".form-ui .form-group:nth-child(2)").hasClass('has-error'))) {
+                                    $(".form-ui .form-group:nth-child(2)").addClass('has-error');
+                                }
+                            }
+                            if ($.inArray(3, errors) >= 0) {
+                                if ($(".form-ui .form-group:nth-child(3)").find("label").length == 0) {
+                                    $(".form-ui .form-group:nth-child(3)").prepend("<label class=\"control-label\" for=\"uiEmail\">Please fill out this field</label>");
+                                }
+                                if (!($(".form-ui .form-group:nth-child(3)").hasClass('has-error'))) {
+                                    $(".form-ui .form-group:nth-child(3)").addClass('has-error');
+                                }
+                            }
+                            $('#applicantSubmit').html('Subscribe');
+                            $('#applicantSubmit').prop( "disabled", false );
+                        }
+                    },
+                    error: function(){
+                        alert("Error submitting admission to the server.");
+                    }
+                });
+            });
+        });
+	</script>
+	<div id="enrollbox" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="form-heading modal-title">Course is under development. Please subscribe for updates.</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<form class="form-ui">
+								<div class="form-group">
+									<input id="applicantName" type="name" name="applicantName" class="form-control" placeholder="Name Surname" required autofocus>
+								</div>
+								<div class="form-group">
+									<input id="applicantEmail" type="email" name="applicantEmail" class="form-control" placeholder="Email address" required>
+								</div>
+								<div class="form-group">
+									<input id="applicantPhone" type="text" name="applicantPhone" class="form-control bfh-phone" placeholder="Phone" data-format="ddd dd dd dd dd dd">
+								</div>
+								<div class="form-group" style="display: none;">
+									<select name="currentLevel" class=" form-control" id="currentLevel">
+										<option selected value="N/A">0</option>
+									</select>
+								</div>
+								<div class="form-group" style="display: none;">
+									<select name="preferredTime" class="form-group form-control" id="preferredTime">
+										<option selected value="N/A">0</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="text-align:center;">
+					<button class="btn btn-lg btn-primary btn-dark" type="submit" id="applicantSubmit">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <!-- Python FORM -->
+        <script>
+		$(function() {
+			$(".form-python input").focus(function(){
+				$(this).parents().removeClass('has-error');
+				$(this).prev().remove();
+			});
+			$("#pythonSubmit").click(function(){
+				var name = $('#pythonName').val();
+				var email = $('#pythonEmail').val();
+				$.ajax({
+					type: "POST",
+					url: "python.php",
+					data: $('form.form-python').serialize(),
+					success: function(msg){
+						if (msg == 1) {
+							$("#pythonbox").modal('hide');
+							$("[id=pythonThanks]").html("<p class=\"text-success\" style=\"color:#2f2f2f;\" >Thank you for submission! We will contact you in case of news.</p>");
+						} else {
+							if (msg == 2 || msg == 4) {
+								if ($(".form-python .form-group:first-child").find("label").length == 0) {
+									$(".form-python .form-group:first-child").prepend("<label class=\"control-label\" for=\"pythonName\">Please provide your name.</label>");
+								}
+								if (!($(".form-python .form-group:first-child").hasClass('has-error'))) {
+									$(".form-python .form-group:first-child").addClass('has-error');
+								}
+							}
+							if (msg == 3 || msg == 4) {
+								if ($(".form-python .form-group:nth-child(2)").find("label").length == 0) { 
+									$(".form-python .form-group:nth-child(2)").prepend("<label class=\"control-label\" for=\"pythonEmail\">Please provide a valid e-mail address.</label>");
+								}
+								if (!($(".form-python .form-group:nth-child(2)").hasClass('has-error'))) {
+									$(".form-python .form-group:nth-child(2)").addClass('has-error');
+								}
+							}
+						}
+					},
+					error: function(){
+						alert("Error submitting admission to the server.");
+					}
+				});
+			});
+		});
+	</script>
+	<div id="pythonbox" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="form-heading modal-title">Subscribe to stay informed</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<form class="form-python">
+								<div class="form-group">
+									<input id="pythonName" type="name" name="pythonName" class="form-control" placeholder="Name, Surname" required autofocus>
+								</div>
+								<div class="form-group">
+								<input id="pythonEmail" type="email" name="pythonEmail" class="form-control" placeholder="Email address" required>
+								</div>
+								<div class="form-group">
+									<input id="pythonPhone" type="text" name="pythonPhone" class="form-control bfh-phone" placeholder="Phone" data-format="ddd dd dd dd dd dd">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="text-align:center;">
+					<button class="btn btn-lg btn-primary btn-dark" type="submit" id="pythonSubmit">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="courses">
+		<div class="container">
+			<!--<div class="row">-->
+			<!--<div class="col-xs-12">-->
+			<!--<h1>Դասընթացներ</h1>-->
+			<!--</div>-->
+			<!--</div>-->
+
+			<div id="intro-level">
+				<div class="row" id="intro-level-title">
+					<div class="col-xs-12">
+						<h2><img class="grad-ico" src="../assets/img/grad-ico-1.png"/> Courses for beginners {Lvl 0}</h2>
+						<!--<p> Courses for beginners {Lvl 0}</p>-->
+					</div>
+				</div>
+				<!--1st row-->
+				<div class="row" id="intro-level-row">
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-js.html">
+							<img class="img-responsive" src="../assets/img/intro-level/js.png" alt="Javascript">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-java.html">
+							<img class="img-responsive" src="../assets/img/intro-level/java.png" alt="Java">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-ios.html">
+							<img class="img-responsive" src="../assets/img/intro-level/ios.png" alt="iOS">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="qe-fundamentals.html">
+							<img class="img-responsive" src="../assets/img/intro-level/qa.png" alt="QA">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-ui-ux.html">
+							<img class="img-responsive" src="../assets/img/intro-level/ui-ux.png" alt="UI UX">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="introduction.html">
+							<img class="img-responsive" src="../assets/img/intro-level/cpp.png" alt="C++">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-python.html">
+							<img class="img-responsive" src="../assets/img/intro-level/python.png" alt="Python">
+						</a>
+					</div>
+
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="intro-it-pm.html">
+							<img class="img-responsive" src="../assets/img/intro-level/itpm.png" alt="Introduction to IT PM">
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div id="intermediate-level">
+				<div class="row" id="intermediate-level-title">
+					<div class="col-xs-12">
+						<h2><img class="grad-ico" src="../assets/img/grad-ico-2.png"/> Specialized courses {LVL 1}</h2>
+					</div>
+				</div>
+				<!--2nd row-->
+				<div class="row">
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/machine-learning-new/level1.php">
+							<img class="img-responsive" src="../assets/img/ml/logo1-without-bg.png" alt="Machine Learning icon">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="ui-ux.html"><img class="img-responsive" src="../assets/img/ui-ux/ui_ux_logo.png" alt="ui ux"></a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="js.html">
+							<img class="img-responsive" src="../assets/img/courses/js.png" alt="Javascript">
+						</a>
+					</div>
+				</div>
+
+				<!--3rd row-->
+				<div class="row">
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href = "java.html">
+							<img class="img-responsive" src="../assets/img/courses/java.png" alt="Java">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="android.html"><img class="img-responsive" src="../assets/img/courses/android.png" alt="Android"></a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="ios.html"><img class="img-responsive" src="../assets/img/courses/ios.png" alt="iOS"></a>
+					</div>
+
+				</div>
+
+				<!--4 row-->
+				<div class="row">
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="qe.html">
+							<img class="img-responsive" src="../assets/img/courses/qa2.png" alt="QA">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="csharp.html">
+							<img class="img-responsive" src="../assets/img/courses/csharp2.png" alt="C#">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="python.html">
+							<img class="img-responsive" src="../assets/img/courses/python2.png" alt="Python">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="cpp.html">
+							<img class="img-responsive" src="../assets/img/courses/c++.png" alt="C++">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/computer-science.html">
+							<img class="img-responsive" src="../assets/img/courses/tech.png" alt="Tech for managers">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<!--<a class="modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="itpm" onclick="courseName(this.id)">-->
+                        <a href="../en/project-management-page.php">
+							<img class="img-responsive" src="../assets/img/intermediate-level/itpm.png" alt="IT PM">
+						<!--<div>-->
+							<!--<p>-->
+								<!--<a style="width:80%;" class="btn btn-primary btn-lg btn-dark modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="itpm" onclick="courseName(this.id)">-->
+									<!--Subscribe Now-->
+								<!--</a>-->
+							<!--</p>-->
+						<!--</div>-->
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="nodejs.html">
+							<img class="img-responsive" src="../assets/img/nodejs/node-js-icon.png" alt="Node.js">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a class="modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="Digital Marketing" onclick="courseName(this.id)">
+							<img class="img-responsive" src="../assets/img/digital-marketing/lvl1.png" alt="Digital Marketing">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a class="modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="GraphicDesign" onclick="courseName(this.id)">
+							<img class="img-responsive" src="../assets/img/graphic-design/lvl1.png" alt="Graphic Design">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="advanced-level">
+				<div class="row" id="advanced-level-title">
+					<div class="col-xs-12">
+						<h2><img class="grad-ico" src="../assets/img/grad-ico-2.png"/>Advanced Courses {LVL 2}</h2>
+					</div>
+				</div>
+				<!--5th row-->
+				<div class="row">
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="algorithms.html"><img class="img-responsive" src="../assets/img/courses/alg2.png" alt="Algorithms"></a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="react.html"><img class="img-responsive" src="../assets/img/react/logo.png" alt="React"></a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a class="modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="ux" onclick="courseName(this.id)">
+							<img class="img-responsive" src="../assets/img/intermediate-level/ux.png" alt="UX">
+							<!--<div>-->
+							<!--<p>-->
+							<!--<a style="width:80%;" class="btn btn-primary btn-lg btn-dark modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="bigdata" onclick="courseName(this.id)">-->
+							<!--Subscribe Now-->
+							<!--</a>-->
+							<!--</p>-->
+							<!--</div>-->
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a class="modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="bigdata" onclick="courseName(this.id)">
+						<img class="img-responsive" src="../assets/img/intermediate-level/bigdata.png" alt="Big Data">
+						<!--<div>-->
+							<!--<p>-->
+								<!--<a style="width:80%;" class="btn btn-primary btn-lg btn-dark modal-opener" data-toggle="modal" data-target="#enrollbox" role="button" id="bigdata" onclick="courseName(this.id)">-->
+									<!--Subscribe Now-->
+								<!--</a>-->
+							<!--</p>-->
+						<!--</div>-->
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="bootcamp">
+				<div class="row" id="bootcamp-level-title">
+					<div class="col-xs-12">
+						<h2><img class="grad-ico" src="../assets/img/grad-ico-3.png"/> Coding Bootcamps</h2>
+					</div>
+				</div>
+				<!--4th row-->
+				<div class="row">
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/product-management/">
+							<img class="img-responsive" src="../assets/img/product-management.png" alt="Product Management">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/workfront.html">
+							<img class="img-responsive" src="../assets/img/courses/wf_back_end_logo.png" alt="Workfront">
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/quality-engineering-bootcamp.html">
+							<img class="img-responsive" src="../assets/img/qe-picsart/picsart_logo_home.png" alt="Picsart - Internshipt QA">
+						</a>
+					</div>
+					<!--<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">-->
+						<!--<a href="../en/support-engineering.html">-->
+							<!--<img class="img-responsive" src="../assets/img/omd/logo.png" alt="">-->
+						<!--</a>-->
+					<!--</div>-->
+					<div class="col-md-3 col-xs-8 col-md-offset-0 col-xs-offset-2">
+						<a href="../en/machine-learning/">
+							<img class="img-responsive" src="../assets/img/ml/logo.png" alt="Machine Learning">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="faq">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" id="accordion">
+					<div class="faqHeader">Frequently Asked Questions</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									I’m completely new to programming can I take part in the courses and become a competitive programmer?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								Sure you can! Please, consider applying to our introductory courses. We have Introduction to Programming course in C++ and JS.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									How can I participate in the courses?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul>
+									<li>First of all you should register on the web page (after registration you’ll get an email where you can find date,  time and the place of exam)</li>
+									<li>Then you take exam</li>
+									<li>Meet for a short and informal interview</li>
+									<li>After you can be enrolled in the class</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+									I took the exam. When and how can I know the results?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse">
+							<div class="panel-body">
+								You will be informed about the results in two week time after the exam. Sometimes it can take us three week.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+									How much do I have to pay for the course?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse">
+							<div class="panel-body">
+								The cost of each training is different. you can learn more details about our costs on the website, on each course separate page
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+									Is it necessary to have your own notebook?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseEight" class="panel-collapse collapse">
+							<div class="panel-body">
+								It is not necessary but preferable. We can provide you with a notebook to work during the classes and at ACA if needed. The iOS course is an exception, you will get the Macbook for your own use if you will need one.
+								<br>For more details please, see the corresponding page: <a href="ios.html">http://aca.am/hy/ios.html</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+									After the completion of the course will I have a job?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNine" class="panel-collapse collapse">
+							<div class="panel-body">
+								We arrange interviews with our partner IT companies for students who complete the courses successfully. We can not guarantee you’ll get the job, but chances are high.							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+									Do you have private courses?
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTen" class="panel-collapse collapse">
+							<div class="panel-body">
+								No, we don’t have any private lessons.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Expert Opinion</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="review col-md-5 col-xs-12">
+                    <img class="hidden-xs hidden-sm img-circle img-thumbnail" src="../assets/img/reviews/arsenbabayan.jpg" alt="review1">
+                    <h2>Arsen Babayan</h2>
+                    <em><h4>Director of Engineering at Workfront</h4></em>
+                    <br>
+                    <p><i class="fa fa-quote-left"></i>ACA has been a central piece to Workfront's talent intake in Armenia.
+                        Within a span of 1,5 years and for three successive internship programs,
+                        they have provided Workfront with inflow of great talent resulting in 10 hires from the first two,
+                        9 of which are still with the company and performing either well or outstanding.
+                        ACA's attention to the quality of their service and continuous improvement of their
+                        training curriculum have placed them well as one of the most important partners of
+                        Workfront in the talent market around the globe.</p>
+                </div>
+                <div class="review col-md-5 col-md-offset-2 col-xs-offset-0 col-xs-12">
+                    <img class="hidden-xs hidden-sm img-circle img-thumbnail" src="../assets/img/reviews/rev2.jpg" alt="review2">
+                    <h2>Narek Gevorgyan</h2>
+                    <em><h4>CEO Inomma</h4></em>
+                    <br>
+                    <p><i class="fa fa-quote-left"></i>&nbsp;&nbsp;&nbsp;The great thing about Armenian Code Academy is that all
+                        the courses are created to cover most of the software engineering demands.
+                        Those guys are pushing our less developed education system to reach the IT,
+                        which is growing dramatically. I'm sure all successful graduates will
+                        have a choice from a few job offers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<script>
+		$(function() {
+			$(".form-partner input").focus(function(){
+				$(this).parents().removeClass('has-error');
+				$(this).prev().remove();
+			});
+			$("#partnerSubmit").click(function(){
+				var name = $('#partnerName').val();
+				var email = $('#partnerEmail').val();
+				$.ajax({
+					type: "POST",
+					url: "partners.php",
+					data: $('form.form-partner').serialize(),
+					success: function(msg){
+						if (msg == 1) {
+							$("#partnerbox").modal('hide');
+							$("#partnerThanks").html("<p class=\"text-success\" >Your partnership suggestion has been submitted. Thank you!</p>");
+						} else {
+							if (msg == 2 || msg == 4) {
+								if ($(".form-partner .form-group:first-child").find("label").length == 0) {
+									$(".form-partner .form-group:first-child").prepend("<label class=\"control-label\" for=\"partnerName\">Please provide the name of your company.</label>");
+								}
+								if (!($(".form-partner .form-group:first-child").hasClass('has-error'))) {
+									$(".form-partner .form-group:first-child").addClass('has-error');
+								}
+							}
+							if (msg == 3 || msg == 4) {
+								if ($(".form-partner .form-group:nth-child(2)").find("label").length == 0) { 
+									$(".form-partner .form-group:nth-child(2)").prepend("<label class=\"control-label\" for=\"partnerName\">Please provide a valid e-mail address.</label>");
+								}
+								if (!($(".form-partner .form-group:nth-child(2)").hasClass('has-error'))) {
+									$(".form-partner .form-group:nth-child(2)").addClass('has-error');
+								}
+							}
+						}
+					},
+					error: function(){
+						alert("Error submitting partnership suggestion to server.");
+					}
+				});
+			});
+		});
+	</script>
+	<div id="partnerbox" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="form-heading modal-title">Become a Partner</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<form class="form-partner">
+								<div class="form-group">
+									<input id="partnerName" type="name" name="PartnerName" class="form-control" placeholder="Company Name" required autofocus>
+								</div>
+								<div class="form-group">
+								<input id="partnerEmail" type="email" name="PartnerEmail" class="form-control" placeholder="Email address" required>
+								</div>
+								<div class="form-group">
+									<input id="partnerPhone" type="text" name="PartnerPhone" class="form-control bfh-phone" placeholder="Phone" data-format="ddd dd dd dd dd dd">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="text-align:center;">
+					<button class="btn btn-lg btn-primary btn-dark" type="submit" id="partnerSubmit">Become Our Partner</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="partners">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <h1>Our Partners</h1>
+                    <p>We collaborate with the best Armenian IT companies. Educational courses are strictly compliant with company requirements. Each course contains three assessment days, during which interviews with future employers are organized. Successfully graduated students will receive jobs with high salaries and financial compensation amounting to <strong>100%</strong> of the course fee.</p>
+                    <div id="partnerThanks"><a data-toggle="modal" href="#partnerbox" class="btn btn-primary btn-lg btn-block btn-dark">Become a Partner</a></div>
+	            </div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/inomma.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/teamable.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+							<img src="../assets/img/partners/betconstruct.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/helix.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/sfl.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/workfront_new.png" alt="">
+                        </div>
+						<div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/frismos.jpg" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/picsart.png" alt="">
+                        </div>
+                        <div class="col-xs-4 partner_logo">
+                            <img src="../assets/img/partners/pixomatic.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+	<!--script>
+		$(function() {
+			$(".form-android input").focus(function(){
+				$(this).parents().removeClass('has-error');
+				$(this).prev().remove();
+			});
+			$("#androidSubmit").click(function(){
+				var name = $('#androidName').val();
+				var email = $('#androidEmail').val();
+				$.ajax({
+					type: "POST",
+					url: "subscribe.php",
+					data: $('form.form-android').serialize(),
+					success: function(msg){
+						if (msg == 1) {
+							//$("#enrollbox").modal('hide');
+							$("[id=androidThanks]").html("<p class=\"text-success\" style=\"color:white;\" >Thank you for submission! We will contact you soon.</p>");
+						} else {
+							if (msg == 2 || msg == 4) {
+								if ($(".form-android .form-group:first-child").find("label").length == 0) {
+									$(".form-android .form-group:first-child").prepend("<label class=\"control-label\" for=\"androidName\">Please provide your name.</label>");
+								}
+								if (!($(".form-android .form-group:first-child").hasClass('has-error'))) {
+									$(".form-android .form-group:first-child").addClass('has-error');
+								}
+							}
+							if (msg == 3 || msg == 4) {
+								if ($(".form-android .form-group:nth-child(2)").find("label").length == 0) {
+									$(".form-android .form-group:nth-child(2)").prepend("<label class=\"control-label\" for=\"androidEmail\">Please provide a valid e-mail address.</label>");
+								}
+								if (!($(".form-android .form-group:nth-child(2)").hasClass('has-error'))) {
+									$(".form-android .form-group:nth-child(2)").addClass('has-error');
+								}
+							}
+						}
+					},
+					error: function(){
+						alert("Error submitting admission to the server.");
+					}
+				});
+			});
+		});
+	</script-->
+
+	<script>
+		$(function () {
+			$("#androidSubmit").click(function(){
+				var name = $("#androidName").val();
+				var email = $("#androidEmail").val();
+				var phone = $("#androidPhoneNumber").val();
+				// Returns successful data submission message when the entered information is stored in database.
+				var dataString = 'name1='+ name + '&email1='+ email + 'phone1=' + phone;
+				if(name===''||email==='' || phone==='')
+				{
+					alert("Please Fill All Fields");
+				}
+				else
+				{
+					// AJAX Code To Submit Form.
+					$.ajax({
+						type: "POST",
+						url: "subscribe.php",
+						data: {
+							subName: name,
+							subEmail: email,
+							subPhone: phone,
+						},
+						//cache: false,
+						success: function(msg){
+								$("[id=androidThanks]").html("<p class=\"text-success\" style=\"color:white;\" >Thank you for submission! We will contact you soon.</p>");
+						}
+					});
+				}
+
+				return false;
+			});
+		});
+	</script>
+	
+    <div id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="text"> <!-- data-sr="enter left, scale 0%, vF 0.4"-->
+                        <h1>Subscribe to our News!</h1>
+                        <h2>Get Updates on Starting Dates and New Internships</h2>
+                    </div>
+                </div>
+                <div class="subscribe col-md-6 col-xs-12" id = "androidThanks">
+                    <form class="form form-subscribe form-android" method="post">
+                        <div class="form-group" id = "androidNameContainer">
+                            <input type="text" class="form-control" id="androidName" placeholder="Name, Surname" name = "subName">
+                        </div>
+						<div class="form-group" id = "phoneNumberContainer">
+							<input type="text" class="form-control" id="androidPhoneNumber" placeholder="Phone number" name = "phoneNumber">
+						</div>
+						<div class="form-group" id = "androidEmailContainer">
+                            <input type="email" class="form-control" id="androidEmail" placeholder="Email" name = "subEmail">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-enroll" id = "androidSubmit">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="cf">
+		<div class="container">
+			<div class="row">
+				<div class="info col-sm-4 col-xs-12 contact-box">
+					<div class="row">
+						<h4>ADDRESS</h4>
+						<br>
+						<p>
+							3 Hakob Hakobyan, Yerevan, Armenia.
+						</p>
+						<p>
+							P: +374 (12) 48-16-32<br/>
+							E: <a href="mailto:info@aca.am">info@aca.am</a>
+						</p>
+						<h4>Stay connected</h4>
+						<p>
+							<a href="https://www.facebook.com/Armenian-Code-Academy-420491148159763/timeline/"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="mailto: info@aca.am"><i class="fa fa-envelope"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	<script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap-formhelpers-phone.js"></script>
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
