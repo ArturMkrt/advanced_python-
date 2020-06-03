@@ -32,8 +32,8 @@ print(data)
 import xml.etree.ElementTree as ET
 tree = ET.parse('movies.xml')
 root = tree.getroot()
-#6
-for elem in root.iter():
+#5
+for elem in root.iter('genre'):
     print(elem.tag,elem.attrib)
 #6
 elemDict = {}
