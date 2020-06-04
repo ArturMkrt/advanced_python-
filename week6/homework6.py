@@ -53,10 +53,20 @@ movie.set('title','Back to the Future')
 tree.write('movies.xml')
 
 #10
+import re
+import xml.etree.ElementTree as ET
+tree = ET.parse('movies.xml')
+root = tree.getroot()
 for form in root.findall("./genre/decade/movie/format"):
     if form.attrib['multiple'] == 'False':
         form.set('multiple','No')
-tree.write('movies.xml')
+for form in root.findall("./genre/decade/movie/format"):
+    match = re.search(',',form.text)
+    if match:
+        form.set('multiple','Yes')
+    else:
+        form.set('multiple','No')
+tree.write("movies.xml")
 #11
 action = root.find("./genre[@category='Action']")
 new_dec = ET.SubElement(action, 'decade')
