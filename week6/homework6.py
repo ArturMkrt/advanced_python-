@@ -68,20 +68,29 @@ for form in root.findall("./genre/decade/movie/format"):
         form.set('multiple','No')
 tree.write("movies.xml")
 #11
-action = root.find("./genre[@category='Action']")
-new_dec = ET.SubElement(action, 'decade')
-new_dec.attrib["years"] = '2000s'
-xmen = root.find("./genre/decade/movie[@title='X-Men']")
-new_d2000 = root.find("./genre[@category='Action']/decade[@years='2000s']")
-new_d2000.append(xmen)
-d = root.find("./genre[@category='Action']/decade[@years='1990s']")
-d.remove(xmen)
-Thriller = root.find("./genre[@category='Thriller']")
-new_d = ET.SubElement(Thriller, 'decade')
-new_d.attrib["years"] = '2000s'
-ap = root.find("./genre/decade/movie[@title='American Psycho']")
-new_th = root.find("./genre[@category='Thriller']/decade[@years='2000s']")
-new_th.append(ap)
-x = root.find("./genre[@category='Thriller']/decade[@years='1980s']")
-x.remove(ap)
-tree.write('movies.xml')
+import xml.etree.ElementTree as ET
+tree = ET.parse('movies.xml')
+root = tree.getroot()
+
+for genre in root.findall("./genre"):
+    a = []
+    x = {}
+    for decade in genre.findall('./decade'):
+        yearsINT = int(decade.attrib['years'][0:4])
+        x[yearsINT] = decade
+        for movie in decade.findall("./movie"): 
+            year = movie.find("year")
+            if int(year.text)-yearsINT>=10:
+                a.append(movie)
+                decade.remove(movie)
+
+    for movie in a:
+        temp  = (int(movie.find('./year').text[:-1])*10)
+        if temp in x:
+            x[temp].append(movie)
+        else:
+            new_decade = ET.SubElement(genre,"decade")
+            new_decade.append(movie)
+            new_decade.attrib["years"] = "{}s".format(temp)
+            x[temp] = new_decade
+tree.write("new.xml")
